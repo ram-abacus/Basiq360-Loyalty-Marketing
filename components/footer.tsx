@@ -76,12 +76,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
+                {/* <Link
                   href="https://www.basiq360.com/about"
                   className="text-slate-600 hover:text-[#004bab] transition-colors"
                 >
                   About Us
-                </Link>
+                </Link> */}
               </li>
               <li>
                 <Link href="/contact" className="text-slate-600 hover:text-[#004bab] transition-colors">
@@ -120,9 +120,9 @@ export function Footer() {
         <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
           <p>© {new Date().getFullYear()} Basiq360. All Rights Reserved.</p>
           <div className="flex items-center gap-4">
-            <Link href="https://www.basiq360.com/terms-conditions" className="hover:text-[#004bab] transition-colors">
+            {/* <Link href="https://www.basiq360.com/terms-conditions" className="hover:text-[#004bab] transition-colors">
               Terms & Conditions
-            </Link>
+            </Link> */}
             <Link href="/privacy-policy" className="hover:text-[#004bab] transition-colors">
               Privacy Policy
             </Link>

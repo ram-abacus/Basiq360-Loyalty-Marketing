@@ -120,13 +120,13 @@ export function TestimonialCarousel() {
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .testimonial-carousel-wrapper .slick-prev:hover,
+        /* .testimonial-carousel-wrapper .slick-prev:hover,
         .testimonial-carousel-wrapper .slick-next:hover {
           background: linear-gradient(135deg, #004bab 0%, #0f6ad1 100%);
           border-color: #004bab;
           box-shadow: 0 8px 20px rgba(0, 75, 171, 0.25);
           transform: scale(1.08);
-        }
+        } */
 
         .testimonial-carousel-wrapper .slick-prev:before,
         .testimonial-carousel-wrapper .slick-next:before {
@@ -138,10 +138,10 @@ export function TestimonialCarousel() {
           line-height: 1;
         }
 
-        .testimonial-carousel-wrapper .slick-prev:hover:before,
+        /* .testimonial-carousel-wrapper .slick-prev:hover:before,
         .testimonial-carousel-wrapper .slick-next:hover:before {
           color: white;
-        }
+        } */
 
         .testimonial-carousel-wrapper .slick-prev {
           left: 0;

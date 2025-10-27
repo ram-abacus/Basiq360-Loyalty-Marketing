@@ -12,7 +12,7 @@ export function FAQ({ id, q, a }: FAQProps) {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white overflow-hidden">
+    <div className="rounded-2xl border border-slate-200 bg-white overflow-hidden h-[max-content]">
       <button
         onClick={() => setOpen(!open)}
         className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors"

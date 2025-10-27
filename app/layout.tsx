@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import CookieConsent from "@/components/CookieConsent"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -38,10 +39,12 @@ export default function RootLayout({
           type="text/css"
           href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
         />
+        <link rel="icon" type="image/webp" href="fevicon.webp" />
       </head>
       <body className={inter.className}>
         <Header />
         {children}
+        <CookieConsent />
         <Footer />
       </body>
     </html>

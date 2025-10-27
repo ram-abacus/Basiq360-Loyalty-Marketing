@@ -282,7 +282,8 @@ export default function HomePage() {
       </section>
 
       {/* Case Study */}
-      <section id="case" className="bg-gradient-to-b from-white to-slate-50 py-20 sm:py-28">
+      {/* <section id="case" className="bg-gradient-to-b from-white to-slate-50 py-20 sm:py-28"> */}
+      <section id="case" className="bg-slate-50 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-3xl border border-slate-200 p-6 sm:p-8 md:p-12 bg-white shadow-xl grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
@@ -384,7 +385,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="py-20 sm:py-28 bg-slate-50">
+      <section id="contact" className="py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Column - Content */}
