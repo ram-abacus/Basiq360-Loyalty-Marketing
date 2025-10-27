@@ -216,7 +216,7 @@ export default function HomePage() {
       <section id="approach" className="bg-slate-50 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">Proven Growth Approach</h2>
-          <div className="mt-12 grid lg:grid-cols-2 gap-10 items-start">
+          <div className="mt-12 grid lg:grid-cols-2 gap-10 items-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <Step
                 n="01"
