@@ -63,21 +63,21 @@ export default function HomePage() {
                 <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-2 sm:gap-4 text-center">
                   <div className="rounded-xl bg-white/10 backdrop-blur p-3 sm:p-5">
                     <div className="text-lg sm:text-2xl font-bold">
-                      <AnimatedNumber value="12.4k" />
+                      <AnimatedNumber value="184k" />
                     </div>
-                    <div className="text-[10px] sm:text-xs opacity-80 mt-1">App Installs</div>
+                    <div className="text-[10px] sm:text-xs opacity-80 mt-1">New Users Acquired</div>
                   </div>
                   <div className="rounded-xl bg-white/10 backdrop-blur p-3 sm:p-5">
                     <div className="text-lg sm:text-2xl font-bold">
-                      <AnimatedNumber value="2,531" />
+                      <AnimatedNumber value="4.5" className="relative after:content-['★'] after:ml-1 after:text-white-500 after:text-m" />
                     </div>
-                    <div className="text-[10px] sm:text-xs opacity-80 mt-1">Dealer Signups</div>
+                    <div className="text-[10px] sm:text-xs opacity-80 mt-1">Average Rating</div>
                   </div>
                   <div className="rounded-xl bg-white/10 backdrop-blur p-3 sm:p-5">
                     <div className="text-lg sm:text-2xl font-bold">
-                      <AnimatedNumber value="68%" />
+                      <AnimatedNumber value="321k" />
                     </div>
-                    <div className="text-[10px] sm:text-xs opacity-80 mt-1">Active Users</div>
+                    <div className="text-[10px] sm:text-xs opacity-80 mt-1">Engagement</div>
                   </div>
                 </div>
               </div>
@@ -239,7 +239,7 @@ export default function HomePage() {
                 desc="Optimize CAC→LTV, expand territories, and double down on winning segments."
               />
             </div>
-            <div className="rounded-3xl overflow-hidden h-100">
+            <div className="rounded-3xl">
               <GrowthGraph />
               {/* <div className="flex items-center justify-between mb-6">
                 <div className="text-base font-semibold">Growth Projection</div>

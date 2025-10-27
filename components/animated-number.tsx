@@ -10,7 +10,7 @@ interface AnimatedNumberProps {
 export function AnimatedNumber({ value, className = "" }: AnimatedNumberProps) {
   // Parse the value to extract number, prefix, and suffix
   const parseValue = (val: string) => {
-    // Handle cases like "200%", "3x", "+40%", "-28%", "12.4k", "2,531", "95%"
+    // Handle cases like "184k", "4.45", "321k", "-28%", "12.4k", "2,531", "95%"
     const match = val.match(/^([+-]?)(\d+(?:,\d{3})*(?:\.\d+)?)(k|x|%)?$/i)
 
     if (!match) {
