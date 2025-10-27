@@ -239,15 +239,16 @@ export default function HomePage() {
                 desc="Optimize CAC→LTV, expand territories, and double down on winning segments."
               />
             </div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-              <div className="flex items-center justify-between mb-6">
+            <div className="rounded-3xl overflow-hidden h-100">
+              <GrowthGraph />
+              {/* <div className="flex items-center justify-between mb-6">
                 <div className="text-base font-semibold">Growth Projection</div>
                 <div className="text-xs text-slate-500">Installs • Signups • Repeat Txn</div>
               </div>
-              <GrowthGraph />
+              
               <div className="mt-6 text-xs text-slate-500">
                 Illustrative chart showing typical growth trajectory with our 360° approach.
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -387,7 +388,7 @@ export default function HomePage() {
       {/* Contact */}
       <section id="contact" className="py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <div>
               <div className="text-xs font-bold tracking-wider text-[#004bab] uppercase mb-3">GET STARTED</div>
@@ -419,19 +420,19 @@ export default function HomePage() {
                 <div className="text-sm font-semibold text-slate-900 mb-4">RTB Highlights</div>
                 <div className="grid grid-cols-3 gap-4">
                   <div>
-                    <div className="text-2xl font-bold text-[#004bab]">
+                    <div className="text-4xl font-bold text-[#004bab]">
                       <AnimatedNumber value="200%" />
                     </div>
                     <div className="text-xs text-slate-600 mt-1">Active Users</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-[#004bab]">
+                    <div className="text-4xl font-bold text-[#004bab]">
                       <AnimatedNumber value="3x" />
                     </div>
                     <div className="text-xs text-slate-600 mt-1">Onboarding Speed</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-[#004bab]">
+                    <div className="text-4xl font-bold text-[#004bab]">
                       <AnimatedNumber value="+40%" />
                     </div>
                     <div className="text-xs text-slate-600 mt-1">Repeat Txn</div>
