@@ -8,8 +8,10 @@ import { KPI } from "@/components/kpi"
 import { FAQ } from "@/components/faq"
 import { HubSpotForm } from "@/components/hubspot-form"
 import { AnimatedNumber } from "@/components/animated-number"
+import MetricsGrid from "@/components/miniTrend-chart"
 
 export default function HomePage() {
+  const shouldAnimate= false;
   return (
     <main className="min-h-screen bg-white text-slate-800">
       {/* Hero */}
@@ -61,25 +63,25 @@ export default function HomePage() {
                 <div className="text-xs sm:text-sm opacity-90 font-medium">Live Overview</div>
                 <div className="mt-2 text-xl sm:text-2xl lg:text-3xl font-bold">Loyalty Growth Dashboard</div>
                 <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-2 sm:gap-4 text-center">
-                  <div className="rounded-xl bg-white/10 backdrop-blur p-3 sm:p-5">
-                    <div className="text-lg sm:text-2xl font-bold">
-                      <AnimatedNumber value="184k" />
-                    </div>
-                    <div className="text-[10px] sm:text-xs opacity-80 mt-1">New Users Acquired</div>
-                  </div>
-                  <div className="rounded-xl bg-white/10 backdrop-blur p-3 sm:p-5">
-                    <div className="text-lg sm:text-2xl font-bold">
-                      <AnimatedNumber value="4.5" className="relative after:content-['★'] after:ml-1 after:text-white-500 after:text-m" />
-                    </div>
-                    <div className="text-[10px] sm:text-xs opacity-80 mt-1">Average Rating</div>
-                  </div>
-                  <div className="rounded-xl bg-white/10 backdrop-blur p-3 sm:p-5">
-                    <div className="text-lg sm:text-2xl font-bold">
-                      <AnimatedNumber value="321k" />
-                    </div>
-                    <div className="text-[10px] sm:text-xs opacity-80 mt-1">Engagement</div>
-                  </div>
-                </div>
+  <div className="rounded-xl bg-white/10 backdrop-blur p-3 sm:p-5">
+    <div className="text-lg sm:text-2xl font-bold">
+      <AnimatedNumber value="184k" shouldAnimate={true}/>
+    </div>
+    <div className="text-[10px] sm:text-xs opacity-80 mt-1">New Users Acquired</div>
+  </div>
+  <div className="rounded-xl bg-white/10 backdrop-blur p-3 sm:p-5">
+    <div className="text-lg sm:text-2xl font-bold">
+      <AnimatedNumber value="4.5" shouldAnimate={true} className="relative after:content-['★'] after:ml-1 after:mb-2 after:text-white-500 after:text-sm"/>
+    </div>
+    <div className="text-[10px] sm:text-xs opacity-80 mt-1">Average Rating</div>
+  </div>
+  <div className="rounded-xl bg-white/10 backdrop-blur p-3 sm:p-5">
+    <div className="text-lg sm:text-2xl font-bold">
+      <AnimatedNumber value="321k" shouldAnimate={true}/>
+    </div>
+    <div className="text-[10px] sm:text-xs opacity-80 mt-1">Engagement</div>
+  </div>
+</div>
               </div>
               <div className="mt-4 sm:mt-6 grid grid-cols-2 gap-3 sm:gap-4">
                 <Card kpi="-28%" label="Lower CAC" />
@@ -417,32 +419,35 @@ export default function HomePage() {
 
               {/* RTB Highlights Box */}
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
-                <div className="text-sm font-semibold text-slate-900 mb-4">RTB Highlights</div>
-                <div className="grid grid-cols-3 gap-4">
-                  <div>
-                    <div className="text-4xl font-bold text-[#004bab]">
-                      <AnimatedNumber value="200%" />
+                <div className="text-2xl font-semibold text-slate-900 mb-4">RTB Highlights</div>
+
+<MetricsGrid />
+
+                  {/* <div className="grid grid-cols-3 gap-4">
+                    <div className="rounded-2xl border border-slate-200 bg-blue-50 p-6">
+                      <div className="text-4xl font-bold text-[#004bab]">
+                        <AnimatedNumber value="200%" />
+                      </div>
+                      <div className="text-m text-slate-600 mt-1">Active Users</div>
                     </div>
-                    <div className="text-xs text-slate-600 mt-1">Active Users</div>
-                  </div>
-                  <div>
-                    <div className="text-4xl font-bold text-[#004bab]">
-                      <AnimatedNumber value="3x" />
+                    <div className="rounded-2xl border border-slate-200 bg-blue-50 p-6">
+                      <div className="text-4xl font-bold text-[#004bab]">
+                        <AnimatedNumber value="3x" />
+                      </div>
+                      <div className="text-m text-slate-600 mt-1">Onboarding Speed</div>
                     </div>
-                    <div className="text-xs text-slate-600 mt-1">Onboarding Speed</div>
-                  </div>
-                  <div>
-                    <div className="text-4xl font-bold text-[#004bab]">
-                      <AnimatedNumber value="+40%" />
+                    <div className="rounded-2xl border border-slate-200 bg-blue-50 p-6">
+                      <div className="text-4xl font-bold text-[#004bab]">
+                        <AnimatedNumber value="+40%" />
+                      </div>
+                      <div className="text-m text-slate-600 mt-1">Repeat Txn</div>
                     </div>
-                    <div className="text-xs text-slate-600 mt-1">Repeat Txn</div>
-                  </div>
-                </div>
+                  </div> */}
               </div>
             </div>
 
             {/* Right Column - HubSpot Form */}
-            <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div className="rounded-2xl border border-slate-200 bg-white pb-5 shadow-sm">
               <HubSpotForm portalId="242830238" formId="8597f18e-a55f-4eb9-8e02-76699be2124a" region="na2" />
             </div>
           </div>
