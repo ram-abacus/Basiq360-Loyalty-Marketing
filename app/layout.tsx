@@ -39,7 +39,7 @@ export default function RootLayout({
           type="text/css"
           href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
         />
-        <link rel="icon" type="image/webp" href="fevicon.webp" />
+        <link rel="icon" href="/loyalty-marketing/favicon.ico" />
       </head>
       <body className={inter.className}>
         <Header />

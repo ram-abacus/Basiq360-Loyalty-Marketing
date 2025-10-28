@@ -1,6 +1,17 @@
-"use client"
+// "use client"
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Cookie, Shield, BarChart3, Settings, Sparkles, Mail, Calendar, ArrowRight } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: "Cookie Policy - Basiq360",
+  description: "Learn how Basiq360 uses cookies to improve your experience.",
+  icons: {
+    icon: "favicon.ico",
+    shortcut: "favicon.ico",
+    apple: "favicon.ico",
+  },
+}
 
 export default function CookiesPolicy() {
   return (
