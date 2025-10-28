@@ -394,7 +394,7 @@ export default function HomePage() {
             {/* Left Column - Content */}
             <div>
               <div className="text-xs font-bold tracking-wider text-[#004bab] uppercase mb-3">GET STARTED</div>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4 w-100 lg:w-100">
                 Let's Build Your Loyalty Growth Plan
               </h2>
               <p className="text-slate-600 leading-relaxed mb-6">

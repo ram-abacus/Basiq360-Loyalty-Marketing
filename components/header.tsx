@@ -10,8 +10,8 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 md:px-2">
+        <div className="flex h-16 gap-2 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
@@ -25,7 +25,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+          <nav className="hidden md:flex items-center gap-4 lg:gap-8 text-sm font-medium">
             <Link href="/#solutions" className="text-slate-700 hover:text-[#004bab] transition-colors">
               Solutions
             </Link>
@@ -50,13 +50,13 @@ export function Header() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href="/contact"
-              className="rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium hover:bg-slate-50 transition-colors"
+              className="rounded-xl border border-slate-300 px-4 py-2 md:rounded-sm md:px-2 md:py-2 md:text-xs text-sm font-medium hover:bg-slate-50 transition-colors"
             >
               Talk to Us
             </Link>
             <Link
               href="/contact"
-              className="rounded-xl bg-[#FFA500] px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-[#e69500] transition-colors"
+              className="rounded-xl bg-[#FFA500] px-4 py-2 text-sm md:rounded-sm md:px-2 md:py-2 md:text-xs font-semibold text-slate-900 hover:bg-[#e69500] transition-colors"
             >
               Book a Demo
             </Link>
