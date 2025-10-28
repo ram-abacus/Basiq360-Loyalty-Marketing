@@ -419,7 +419,7 @@ export default function HomePage() {
 
               {/* RTB Highlights Box */}
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
-                <div className="text-2xl font-semibold text-slate-900 mb-4">RTB Highlights</div>
+                <div className="text-2xl font-semibold text-slate-900 mb-4">The Numbers Behind Loyalty Success</div>
 
 <MetricsGrid />
 
